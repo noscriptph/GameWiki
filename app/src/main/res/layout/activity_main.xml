@@ -8,7 +8,7 @@
     tools:context=".MainActivity" android:background="@color/colorPrimaryDark">
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/id_txtJuegos"
         style="@style/BarraMenu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -16,7 +16,7 @@
         android:layout_marginEnd="20dp"
         android:text="JUEGOS"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/textView9"
+        app:layout_constraintEnd_toStartOf="@+id/id_txtbuscador"
         app:layout_constraintStart_toStartOf="parent" />
 
     <View
@@ -25,10 +25,10 @@
         android:layout_height="50dp"
         android:background="@color/colorPrimary"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/textView9"
-        app:layout_constraintStart_toEndOf="@+id/textView4" />
+        app:layout_constraintEnd_toStartOf="@+id/id_txtbuscador"
+        app:layout_constraintStart_toEndOf="@+id/id_txtJuegos" />
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/id_txtbuscador"
         style="@style/BarraMenu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -42,11 +42,11 @@
         android:layout_height="50dp"
         android:background="@color/colorPrimary"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/textView11"
-        app:layout_constraintStart_toEndOf="@+id/textView9" />
+        app:layout_constraintEnd_toStartOf="@+id/id_txtFavoritos"
+        app:layout_constraintStart_toEndOf="@+id/id_txtbuscador" />
 
     <TextView
-        android:id="@+id/textView11"
+        android:id="@+id/id_txtFavoritos"
         style="@style/BarraMenu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -55,16 +55,16 @@
         android:text="FAVORITOS"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView9" />
+        app:layout_constraintStart_toEndOf="@+id/id_txtbuscador" />
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragmentContainerView"
-        android:name="com.noscript.gamewiki.Fragmentos.MenuJuegos"
+        android:name="com.noscript.gamewiki.fragmentos.MenuJuegos"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="50dp"
         android:layout_marginBottom="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView9"
+        app:layout_constraintBottom_toTopOf="@+id/id_txtbuscador"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"

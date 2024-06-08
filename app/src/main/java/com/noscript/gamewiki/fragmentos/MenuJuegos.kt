@@ -1,4 +1,4 @@
-package com.noscript.gamewiki.Fragmentos
+package com.noscript.gamewiki.fragmentos
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

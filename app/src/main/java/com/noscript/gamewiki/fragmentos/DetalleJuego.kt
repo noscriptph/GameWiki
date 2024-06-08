@@ -1,4 +1,4 @@
-package com.noscript.gamewiki.Fragmentos
+package com.noscript.gamewiki.fragmentos
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -14,10 +14,10 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [BuscadorJuegos.newInstance] factory method to
+ * Use the [DetalleJuego.newInstance] factory method to
  * create an instance of this fragment.
  */
-class BuscadorJuegos : Fragment() {
+class DetalleJuego : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -35,7 +35,7 @@ class BuscadorJuegos : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_buscador_juegos, container, false)
+        return inflater.inflate(R.layout.fragment_detalle_juego, container, false)
     }
 
     companion object {
@@ -45,12 +45,12 @@ class BuscadorJuegos : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment BuscadorJuegos.
+         * @return A new instance of fragment DetalleJuego.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            BuscadorJuegos().apply {
+            DetalleJuego().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)

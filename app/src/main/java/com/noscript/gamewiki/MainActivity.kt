@@ -5,6 +5,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.navigation.findNavController
 import com.noscript.gamewiki.databinding.ActivityMainBinding
 
 /**
@@ -29,12 +30,21 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        // Set click listener for idTxtJuegos
+        binding.idTxtJuegos.setOnClickListener {
+            it.findNavController().navigate(R.id.action_menuJuegos_to_buscadorJuegos)
+        }
+
+        // Set click listener for idTxtFavoritos
+        binding.idTxtFavoritos.setOnClickListener {
+            it.findNavController().navigate(R.id.action_menuJuegos_to_favoritos)
+        }
     }
 
     override fun onStop() {
         super.onStop()
-        // Libera recursos cuando la actividad deja de ser visible
-        finish()
+        // Libera recursos específicos si es necesario
     }
 
     override fun onBackPressed() {
