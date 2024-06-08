@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">GameWiki</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="imagen_del_juego">Imagen del juego</string>
+    <string name="txt_nombre_del_juego">nombre del juego</string>
+</resources>

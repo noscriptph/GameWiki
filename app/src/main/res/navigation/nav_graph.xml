@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/menuJuegos">
+
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.noscript.gamewiki.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/menuJuegos"
+        android:name="com.noscript.gamewiki.Fragmentos.MenuJuegos"
+        android:label="fragment_menu_juegos"
+        tools:layout="@layout/fragment_menu_juegos" >
+        <action
+            android:id="@+id/action_menuJuegos_to_detalleJuego"
+            app:destination="@id/detalleJuego"
+            app:enterAnim="@anim/nav_default_enter_anim" />
+        <action
+            android:id="@+id/action_menuJuegos_to_favoritos"
+            app:destination="@id/favoritos" />
+        <action
+            android:id="@+id/action_menuJuegos_to_buscadorJuegos"
+            app:destination="@id/buscadorJuegos" />
+    </fragment>
+    <fragment
+        android:id="@+id/detalleJuego"
+        android:name="com.noscript.gamewiki.Fragmentos.DetalleJuego"
+        android:label="fragment_detalle_juego"
+        tools:layout="@layout/fragment_detalle_juego" />
+    <fragment
+        android:id="@+id/favoritos"
+        android:name="com.noscript.gamewiki.Fragmentos.Favoritos"
+        android:label="fragment_favoritos"
+        tools:layout="@layout/fragment_favoritos" >
+        <action
+            android:id="@+id/action_favoritos_to_detalleJuego"
+            app:destination="@id/detalleJuego" />
+    </fragment>
+    <fragment
+        android:id="@+id/buscadorJuegos"
+        android:name="com.noscript.gamewiki.Fragmentos.BuscadorJuegos"
+        android:label="fragment_buscador_juegos"
+        tools:layout="@layout/fragment_buscador_juegos" >
+        <action
+            android:id="@+id/action_buscadorJuegos_to_detalleJuego"
+            app:destination="@id/detalleJuego" />
+    </fragment>
+</navigation>
