@@ -12,4 +12,21 @@
     <string name="busqueda">busqueda</string>
     <string name="cuadro_de_busqueda">cuadro de busqueda</string>
     <string name="boton_buscar">boton buscar</string>
+    <string name="lista_de_juegos">Lista de juegos</string>
+    <string name="desarrollador">Desarrollador</string>
+    <string name="anio">año</string>
+    <string name="categoria">categoria</string>
+    <string name="contenido_de_la_descripcion">contenido de la descripcion</string>
+    <string name="una_estrella">una estrella</string>
+    <string name="dos_estrellas">dos estrellas</string>
+    <string name="anio_de_lanzamiento">Año de lanzamiento</string>
+    <string name="puntuacion">Puntuación</string>
+    <string name="tres_estrellas">tres estrellas</string>
+    <string name="cuatro_estrellas">cuatro estrellas</string>
+    <string name="cinco_estrellas">cinco estrellas</string>
+    <string name="compatir_a_travez_de_otras_apps">compatir a travez de otras apps</string>
+    <string name="compartir">Compartir</string>
+    <string name="compartir_caratula">compartir caratula</string>
+    <string name="descripcion">Descripción</string>
+    <string name="galeria">Galeria</string>
 </resources>
