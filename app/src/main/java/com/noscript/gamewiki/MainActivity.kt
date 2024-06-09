@@ -31,15 +31,7 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        // Set click listener for idTxtJuegos
-        binding.idTxtJuegos.setOnClickListener {
-            it.findNavController().navigate(R.id.action_menuJuegos_to_buscadorJuegos)
-        }
 
-        // Set click listener for idTxtFavoritos
-        binding.idTxtFavoritos.setOnClickListener {
-            it.findNavController().navigate(R.id.action_menuJuegos_to_favoritos)
-        }
     }
 
     override fun onStop() {

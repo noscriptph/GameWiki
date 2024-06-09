@@ -4,4 +4,12 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="imagen_del_juego">Imagen del juego</string>
     <string name="txt_nombre_del_juego">nombre del juego</string>
+    <string name="buscar">BUSCAR</string>
+    <string name="gamewiki">GameWiki</string>
+    <string name="favoritos">FAVORITOS</string>
+    <string name="juegos">JUEGOS</string>
+    <string name="buscador">BUSCADOR</string>
+    <string name="busqueda">busqueda</string>
+    <string name="cuadro_de_busqueda">cuadro de busqueda</string>
+    <string name="boton_buscar">boton buscar</string>
 </resources>

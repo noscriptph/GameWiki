@@ -1,33 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Subtitulos.SubTextPrimaryLight">
+
+    <style name="Subtitulos">
         <item name="android:textColor">@color/colorSubTextPrimaryLight</item>
         <item name="android:textSize">12sp</item>
     </style>
-    <style name="Titulos.TextPrimaryLight">
+
+    <style name="Titulos">
         <item name="android:textColor">@color/colorTextPrimaryLight</item>
         <item name="android:textSize">17sp</item>
         <item name="android:textStyle">bold</item>
 
     </style>
-    <style name="BarraMenu.TextPrimaryLight">
+
+    <style name="BarraMenu">
         <item name="android:textColor">@color/colorBackgroundLight</item>
         <item name="android:textSize">20sp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:layout_marginBottom">10dp</item>
 
-
-
     </style>
 
-    <style name="Subtitulos" parent="Subtitulos.SubTextPrimaryLight">
-        <!-- Define additional properties if needed -->
-    </style>
-    <style name="Titulos" parent="Titulos.TextPrimaryLight">
-        <!-- Define additional properties if needed -->
-    </style>
-
-    <style name="BarraMenu" parent="BarraMenu.TextPrimaryLight">
-        <!-- Define additional properties if needed -->
-    </style>
 </resources>

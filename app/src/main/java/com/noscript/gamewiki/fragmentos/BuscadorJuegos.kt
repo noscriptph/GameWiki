@@ -24,5 +24,4 @@ class BuscadorJuegos : Fragment() {
         super.onDestroyView()
         _binding = null
     }
-
 }
