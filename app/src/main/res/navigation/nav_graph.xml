@@ -42,6 +42,12 @@
             android:id="@+id/action_favoritos_to_detalleJuego"
             app:destination="@id/detalleJuego"
             app:enterAnim="@anim/nav_default_enter_anim" />
+        <action
+            android:id="@+id/action_favoritos_to_buscadorJuegos"
+            app:destination="@id/buscadorJuegos" />
+        <action
+            android:id="@+id/action_favoritos_to_menuJuegos"
+            app:destination="@id/menuJuegos" />
     </fragment>
     <fragment
         android:id="@+id/buscadorJuegos"
@@ -52,5 +58,11 @@
             android:id="@+id/action_buscadorJuegos_to_detalleJuego"
             app:destination="@id/detalleJuego"
             app:enterAnim="@anim/nav_default_enter_anim" />
+        <action
+            android:id="@+id/action_buscadorJuegos_to_menuJuegos"
+            app:destination="@id/menuJuegos" />
+        <action
+            android:id="@+id/action_buscadorJuegos_to_favoritos"
+            app:destination="@id/favoritos" />
     </fragment>
 </navigation>

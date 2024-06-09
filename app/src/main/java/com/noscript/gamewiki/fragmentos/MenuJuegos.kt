@@ -5,6 +5,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.fragment.findNavController
+import com.noscript.gamewiki.R
 import com.noscript.gamewiki.databinding.FragmentMenuJuegosBinding
 
 /**
@@ -12,20 +15,31 @@ import com.noscript.gamewiki.databinding.FragmentMenuJuegosBinding
  */
 class MenuJuegos : Fragment() {
 
+    // Binding para la vista del fragmento
     private var _binding: FragmentMenuJuegosBinding? = null
-    private val binding get() = _binding!!
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
+    // Propiedad solo de lectura para acceder al binding de manera segura
+    private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflar el layout para este fragmento usando ViewBinding
+        // Inflar el layout usando ViewBinding
         _binding = FragmentMenuJuegosBinding.inflate(inflater, container, false)
-        return binding.root
+        val view = binding.root
+
+        // findNavController hacia buscador de juegos
+        binding.idTxtbuscador.setOnClickListener {
+            findNavController().navigate(R.id.action_menuJuegos_to_buscadorJuegos)
+        }
+
+        // findNavController hacia favoritos
+        binding.idTxtFavoritos.setOnClickListener {
+            findNavController().navigate(R.id.action_menuJuegos_to_favoritos)
+        }
+
+        return view
     }
 
     override fun onDestroyView() {
