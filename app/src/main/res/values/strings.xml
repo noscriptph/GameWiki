@@ -29,4 +29,12 @@
     <string name="compartir_caratula">compartir caratula</string>
     <string name="descripcion">Descripción</string>
     <string name="galeria">Galeria</string>
+    <string name="boton_compartir_imagen">boton compartir imagen</string>
+    <string name="caratula_del_juego">caratula del juego</string>
+    <string name="nombredeljuego">NombreDelJuego</string>
+    <string name="estudio">Estudio</string>
+    <string name="categorias">Categorias</string>
+    <string name="tiendadeljuego">TiendaDelJuego</string>
+    <string name="aniodepublicacion">AñoDePublicacion</string>
+    <string name="boton_compartir_detalle_rapido">boton compartir detalle rapido</string>
 </resources>

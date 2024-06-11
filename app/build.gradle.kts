@@ -43,6 +43,7 @@ dependencies {
     implementation(libs.symbol.processing.api)
     //retrofit2
     implementation(libs.retrofit)
+    implementation(libs.converter.gson)
     //picaso
     implementation(libs.picasso)
     //moshi
@@ -51,6 +52,8 @@ dependencies {
     implementation(libs.androidx.lifecycle.viewmodel)
     // LiveData
     implementation(libs.androidx.lifecycle.livedata)
+    //gson
+    implementation (libs.gson)
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)

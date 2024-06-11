@@ -17,7 +17,8 @@
             android:id="@+id/imageView3"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:srcCompat="@android:drawable/ic_menu_gallery" />
+            app:srcCompat="@android:drawable/ic_menu_gallery"
+            tools:ignore="ContentDescription,ImageContrastCheck" />
 
         <ImageView
             android:id="@+id/shareIcon"
@@ -25,7 +26,9 @@
             android:layout_height="50dp"
             android:layout_gravity="bottom|end"
             android:background="@color/colorPrimary"
+            android:contentDescription="@string/boton_compartir_imagen"
             android:padding="5dp"
-            app:srcCompat="@android:drawable/ic_menu_share" />
+            app:srcCompat="@android:drawable/ic_menu_share"
+            tools:ignore="ImageContrastCheck" />
     </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,14 +1,13 @@
-package com.noscript.gamewiki
+package com.noscript.gamewiki.interfazVisual
 
-import android.content.Context
 import android.os.Bundle
 
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
+import com.noscript.gamewiki.R
 import com.noscript.gamewiki.databinding.ActivityMainBinding
 
 /**

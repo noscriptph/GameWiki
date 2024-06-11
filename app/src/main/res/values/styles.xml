@@ -20,5 +20,28 @@
         <item name="android:layout_marginBottom">10dp</item>
 
     </style>
+    <style name="BotonJuegos">
+        <item name="android:textColor">@color/colorBackgroundLight</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginBottom">10dp</item>
+
+    </style>
+    <style name="BotonBuscar">
+        <item name="android:textColor">@color/colorBackgroundLight</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+    <style name="BotonFavoritos">
+        <item name="android:textColor">@color/colorBackgroundLight</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_marginEnd">10dp</item>
+        <item name="android:layout_marginStart">20dp</item>
+
+
+    </style>
 
 </resources>
